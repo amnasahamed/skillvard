@@ -33,7 +33,9 @@ export function SiteFooter({ variant = "hub" }: SiteFooterProps) {
               Master skills. Shape future.
             </p>
             <p className="mt-2 text-sm text-white/60">
-              You can learn on your own. You shouldn&apos;t have to feel alone.
+              {isHub
+                ? "You can learn on your own. You shouldn't have to feel alone."
+                : "നിങ്ങൾക്ക് സ്വയം പഠിക്കാൻ കഴിയും. പക്ഷേ നിങ്ങൾ ഒറ്റയ്ക്കാവേണ്ടതില്ല."}
             </p>
           </div>
 

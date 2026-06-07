@@ -19,7 +19,7 @@ export function WarmthSection() {
           <div className="relative min-h-[220px] overflow-hidden rounded-2xl shadow-md ring-1 ring-black/5 sm:min-h-[280px] lg:min-h-0">
             <Image
               src="/images/nios-warmth.jpg"
-              alt="മെന്റർ കൂടെ — ചൂമുള്ള പിന്തുണ"
+              alt="മെന്റർ കൂടെ — കരുതലുള്ള കൂട്ട്"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 45vw"

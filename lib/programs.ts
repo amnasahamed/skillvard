@@ -24,7 +24,7 @@ export const programs: Program[] = [
     descriptionEn:
       "Flexible open schooling with warm mentor support until you pass.",
     descriptionMl:
-      "തോൽവി അവസാനമല്ല — ചൂമുള്ള പിന്തുണയോടെ NIOS പൂർത്തിയാക്കുക. പരീക്ഷ പാസാകുന്നതുവരെ കൂടെ.",
+      "തോൽവി അവസാനമല്ല — സ്നേഹപൂർണ്ണമായ പിന്തുണയോടെ NIOS പൂർത്തിയാക്കുക. പരീക്ഷ പാസാകുന്നതുവരെ കൂടെ.",
     outcomeEn: "Flexible open schooling with warm support until you pass",
     status: "active",
     href: "/nios-plus-two",

@@ -19,7 +19,7 @@ export const siteConfig = {
   programFeeLabel: "സമഗ്ര പിന്തുണ പാക്കേജ്",
   programFeeApprox: "₹20,000",
   programFeeNoteMl:
-    "ഒറ്റയ്ക്ക് പഠിക്കുന്നതിനേക്കാൾ മികച്ചത് — പരീക്ഷ പാസാകുന്നതുവരെ ഒരു ചൂമുള്ള സഹചരിയുടെ പിന്തുണ.",
+    "ഒറ്റയ്ക്ക് പഠിച്ച് കഷ്ടപ്പെടുന്നതിനേക്കാൾ മികച്ചത് — വിജയം വരെ കൂടെ നിൽക്കുന്ന ഒരു മെന്ററുടെ പിന്തുണ.",
 } as const;
 
 export function getWhatsAppUrl(
