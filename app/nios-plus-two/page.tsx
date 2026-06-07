@@ -12,11 +12,25 @@ export const metadata: Metadata = {
   description: siteMeta.description,
   keywords: siteMeta.keywords,
   openGraph: {
-    title: siteMeta.title,
+    title: siteMeta.titleMl,
     description: siteMeta.descriptionMl,
     url: `${siteConfig.siteUrl}/nios-plus-two`,
     locale: "ml_IN",
-    images: [{ url: "/images/nios-hero.jpg", width: 1400, height: 900 }],
+    images: [
+      {
+        url: "/images/nios-share-banner.png",
+        width: 1200,
+        height: 1200,
+        alt: siteMeta.titleMl,
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteMeta.titleMl,
+    description: siteMeta.descriptionMl,
+    images: ["/images/nios-share-banner.png"],
   },
   alternates: {
     canonical: `${siteConfig.siteUrl}/nios-plus-two`,
