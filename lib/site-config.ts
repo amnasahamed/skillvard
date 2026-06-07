@@ -1,0 +1,32 @@
+export const siteConfig = {
+  siteName: "Skillvard",
+  siteUrl: "https://www.skillvard.in",
+  whatsappNumber: "918129310715",
+  hubWhatsappMessage:
+    "Hi, I'd like to learn more about Skillvard courses. Can you help?",
+  whatsappMessage:
+    "ഹായ്, NIOS Plus Two-യെ കുറിച്ച് സംസാരിക്കാൻ ആഗ്രഹിക്കുന്നു. ഒരുപാട് സംശയങ്ങളുണ്ട് — സഹായിക്കുമോ?",
+  phone: "+91 81293 10715",
+  phoneTel: "+918129310715",
+  address: {
+    name: "സ്കിൽവാർഡ്",
+    nameEn: "Skillvard",
+    lines: ["മുക്കം", "കോഴിക്കോട് 673602"],
+    linesEn: ["Mukkam", "Kozhikode 673602"],
+  },
+  email: "hello@skillvard.com",
+  /** Shown as guidance — confirm exact fee before publish */
+  programFeeLabel: "സമഗ്ര പിന്തുണ പാക്കേജ്",
+  programFeeApprox: "₹20,000",
+  programFeeNoteMl:
+    "ഒറ്റയ്ക്ക് പഠിക്കുന്നതിനേക്കാൾ മികച്ചത് — പരീക്ഷ പാസാകുന്നതുവരെ ഒരു ചൂമുള്ള സഹചരിയുടെ പിന്തുണ.",
+} as const;
+
+export function getWhatsAppUrl(
+  location: string,
+  message: string = siteConfig.whatsappMessage,
+): string {
+  const text = `${message} (${location})`;
+  const encoded = encodeURIComponent(text);
+  return `https://wa.me/${siteConfig.whatsappNumber}?text=${encoded}`;
+}
