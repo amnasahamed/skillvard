@@ -5,6 +5,7 @@ import { WhatsAppFab } from "@/components/whatsapp-fab";
 import { NiosLanding } from "@/components/nios-landing";
 import { siteMeta } from "@/lib/site-content";
 import { siteConfig } from "@/lib/site-config";
+import { AnnouncementBar } from "@/components/announcement-bar";
 
 export const metadata: Metadata = {
   title: siteMeta.title,
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
 export default function NiosPlusTwoPage() {
   return (
     <>
+      <AnnouncementBar variant="nios" />
       <SiteHeader variant="nios" />
       <main>
         <NiosLanding />
@@ -34,3 +36,4 @@ export default function NiosPlusTwoPage() {
     </>
   );
 }
+

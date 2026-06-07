@@ -41,7 +41,10 @@ export const metadata: Metadata = {
     description: hubMeta.description,
   },
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      { url: "/favicon.gif", type: "image/gif" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
     apple: "/favicon.png",
   },
   alternates: {

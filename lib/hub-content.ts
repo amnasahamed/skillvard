@@ -127,3 +127,14 @@ export const hubNav = [
   { href: "/nios-plus-two", label: "NIOS Plus Two" },
   { href: "/#contact", label: "Contact" },
 ];
+
+export const hubMilestone = {
+  eyebrowEn: "Milestone",
+  badgeEn: "Official Launch",
+  titleEn: "Skillvard Logo Officially Launched by Hon. Minister P. K. Kunhalikutty",
+  subtitleEn: "Minister for Industries, IT & AI, Government of Kerala",
+  bodyEn: "We are thrilled to announce that our official brand logo was launched by the Hon. Minister for Industries, IT & AI, Government of Kerala, P. K. Kunhalikutty. This mark of recognition highlights our commitment to making high-quality, mentor-supported, skills-first education accessible to learners. The ceremony took place in the presence of our founding team, marking the beginning of our mission to empower students with job-ready skills.",
+  imageAltEn: "Hon. Minister P. K. Kunhalikutty launching the Skillvard logo with the founding team",
+  dateEn: "June 7, 2026",
+};
+
