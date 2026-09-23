@@ -15,7 +15,7 @@ export function HubHeroVideo({ caption }: HubHeroVideoProps) {
   }, []);
 
   return (
-    <div className="relative aspect-[5/4] overflow-hidden rounded-2xl shadow-xl ring-1 ring-black/5 sm:rounded-3xl lg:aspect-[4/3]">
+    <div className="relative aspect-[5/4] overflow-hidden rounded-[1.25rem_3.5rem_1.25rem_1.25rem] shadow-[0_32px_80px_rgb(16_19_13/0.18)] ring-1 ring-black/5 sm:rounded-[1.5rem_5rem_1.5rem_1.5rem] lg:aspect-[4/3]">
       {/* Poster shows instantly while video buffers */}
       <div
         className="absolute inset-0 bg-cover bg-center transition-opacity duration-700 ease-out"

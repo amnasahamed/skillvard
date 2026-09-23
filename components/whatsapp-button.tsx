@@ -16,11 +16,11 @@ const variantClasses: Record<
   string
 > = {
   primary:
-    "inline-flex items-center justify-center gap-2 rounded-full bg-[var(--brand-lime)] px-6 py-3 text-sm font-semibold text-[var(--brand-black)] shadow-md transition hover:bg-[var(--brand-lime-dark)] hover:shadow-lg",
+    "interactive-lift inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-[var(--brand-lime)] px-6 py-3 text-sm font-bold text-[var(--brand-black)] shadow-[0_8px_24px_rgb(120_153_0/0.18)] transition duration-200 hover:bg-[#c5ef2b] hover:shadow-[0_12px_28px_rgb(120_153_0/0.25)]",
   outline:
-    "inline-flex items-center justify-center gap-2 rounded-full border-2 border-[var(--brand-black)] bg-transparent px-6 py-3 text-sm font-semibold text-[var(--brand-black)] transition hover:bg-[var(--brand-black)] hover:text-white",
+    "interactive-lift inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-[var(--brand-black)]/20 bg-white/70 px-6 py-3 text-sm font-bold text-[var(--brand-black)] transition duration-200 hover:border-[var(--brand-black)] hover:bg-[var(--brand-black)] hover:text-white",
   footer:
-    "inline-flex items-center justify-center gap-2 rounded-full bg-[var(--brand-lime)] px-5 py-2.5 text-sm font-semibold text-[var(--brand-black)] transition hover:opacity-90",
+    "interactive-lift inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-[var(--brand-lime)] px-5 py-2.5 text-sm font-bold text-[var(--brand-black)] transition duration-200 hover:bg-[#c5ef2b]",
 };
 
 export function WhatsAppButton({

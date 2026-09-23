@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Anek_Malayalam, Inter } from "next/font/google";
+import { Anek_Malayalam, Manrope } from "next/font/google";
 import Script from "next/script";
 import { JsonLd } from "@/components/json-ld";
 import { hubMeta } from "@/lib/hub-content";
@@ -13,9 +13,9 @@ const anekMalayalam = Anek_Malayalam({
   display: "swap",
 });
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-sans",
   display: "swap",
 });
 
@@ -60,11 +60,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${anekMalayalam.variable} ${inter.variable}`}>
+    <html lang="en" className={`${anekMalayalam.variable} ${manrope.variable}`}>
       <head>
         <JsonLd />
       </head>
       <body className="antialiased">
+        <a href="#main-content" className="skip-link">Skip to main content</a>
         {children}
         {gaId ? (
           <>

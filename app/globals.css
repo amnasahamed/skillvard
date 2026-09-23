@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --brand-lime: #b8e600;
-  --brand-black: #0a0a0a;
-  --brand-lime-dark: #9bc400;
+  --brand-lime: #b7e21b;
+  --brand-black: #10130d;
+  --brand-lime-dark: #789900;
+  --brand-cream: #f6f7f0;
+  --brand-mist: #ecefe3;
 }
 
 html {
@@ -12,9 +14,10 @@ html {
 }
 
 body {
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
   color: var(--brand-black);
-  background: #ffffff;
+  background: var(--brand-cream);
+  text-rendering: optimizeLegibility;
 }
 
 body.locale-ml {
@@ -27,7 +30,69 @@ body.locale-ml {
 }
 
 .font-display {
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--brand-lime) 80%, white);
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 100;
+  transform: translateY(-160%);
+  border-radius: 0.75rem;
+  background: var(--brand-black);
+  color: white;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: transform 180ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.brand-grid {
+  background-image:
+    linear-gradient(to right, rgb(16 19 13 / 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(16 19 13 / 0.035) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: linear-gradient(to bottom, black, transparent 88%);
+}
+
+.brand-noise {
+  background-image: radial-gradient(rgb(255 255 255 / 0.08) 0.7px, transparent 0.7px);
+  background-size: 9px 9px;
+}
+
+@media (hover: hover) {
+  .interactive-lift:hover {
+    transform: translateY(-3px);
+  }
+}
+
+.interactive-lift:active {
+  transform: translateY(0) scale(0.985);
 }
 
 @keyframes hub-enter {

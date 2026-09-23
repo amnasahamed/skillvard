@@ -39,7 +39,7 @@ export default function NiosGuideRoute() {
   return (
     <>
       <SiteHeader variant="nios" />
-      <main>
+      <main id="main-content">
         <NiosGuidePage />
       </main>
       <SiteFooter variant="nios" />

@@ -1,5 +1,7 @@
 export const siteConfig = {
   siteName: "Skillvard",
+  legalName: "SKILLVARD INTERNATIONAL LLP",
+  llpin: "ACZ-5861",
   siteUrl: "https://www.skillvard.in",
   whatsappNumber: "918129310715",
   hubWhatsappMessage:
@@ -10,9 +12,12 @@ export const siteConfig = {
   phoneTel: "+918129310715",
   address: {
     name: "സ്കിൽവാർഡ്",
-    nameEn: "Skillvard",
-    lines: ["മുക്കം", "കോഴിക്കോട് 673602"],
-    linesEn: ["Mukkam", "Kozhikode 673602"],
+    nameEn: "Skillvard International LLP",
+    lines: ["14/2004-A, വയലിൽ, മുക്കം", "കോഴിക്കോട്, കേരളം 673602"],
+    linesEn: [
+      "14/2004-A, Vayalil, Mukkam",
+      "Kozhikode, Kerala 673602, India",
+    ],
   },
   email: "hello@skillvard.com",
   /** Shown as guidance — confirm exact fee before publish */

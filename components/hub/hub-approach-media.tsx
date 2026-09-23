@@ -11,7 +11,7 @@ export function HubApproachMedia() {
   }, []);
 
   return (
-    <div className="relative min-h-[240px] overflow-hidden rounded-2xl shadow-md ring-1 ring-black/5 sm:min-h-[300px] lg:min-h-0">
+    <div className="relative min-h-[280px] overflow-hidden rounded-[3rem_1.5rem_1.5rem_1.5rem] shadow-[0_28px_70px_rgb(16_19_13/0.14)] ring-1 ring-black/5 sm:min-h-[340px] lg:min-h-0">
       <div
         className="absolute inset-0 bg-zinc-100 transition-opacity duration-700 ease-out"
         style={{ opacity: videoReady ? 0 : 1 }}

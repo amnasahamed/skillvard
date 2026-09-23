@@ -6,6 +6,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/nios-plus-two",
     "/nios-plus-two/guide",
+    "/terms-and-conditions",
+    "/privacy-policy",
+    "/cancellation-and-refund",
+    "/shipping-and-exchange",
+    "/contact-us",
   ];
 
   return routes.map((route) => ({

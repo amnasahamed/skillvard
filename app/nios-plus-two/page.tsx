@@ -42,7 +42,7 @@ export default function NiosPlusTwoPage() {
     <>
       <AnnouncementBar variant="nios" />
       <SiteHeader variant="nios" />
-      <main>
+      <main id="main-content">
         <NiosLanding />
       </main>
       <SiteFooter variant="nios" />
@@ -50,4 +50,3 @@ export default function NiosPlusTwoPage() {
     </>
   );
 }
-

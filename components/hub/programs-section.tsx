@@ -8,7 +8,7 @@ import { WhatsAppButton } from "@/components/whatsapp-button";
 function ProgramCard({ program }: { program: Program }) {
   return (
     <Link href={program.href} className="group block">
-      <article className="overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-black/5 transition group-hover:-translate-y-0.5 group-hover:ring-[var(--brand-lime)] group-hover:shadow-lg">
+      <article className="interactive-lift overflow-hidden rounded-[2rem] bg-white shadow-[0_18px_50px_rgb(16_19_13/0.08)] ring-1 ring-black/5 transition duration-300 group-hover:ring-[var(--brand-lime-dark)]/35 group-hover:shadow-[0_28px_70px_rgb(16_19_13/0.12)]">
         <div className="relative aspect-[16/10] sm:aspect-[21/9]">
           <Image
             src={program.image}
@@ -19,7 +19,7 @@ function ProgramCard({ program }: { program: Program }) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
           {program.badgeEn ? (
-            <span className="absolute left-5 top-5 rounded-full bg-[var(--brand-lime)] px-3 py-1 text-xs font-bold text-[var(--brand-black)]">
+            <span className="absolute left-5 top-5 rounded-lg bg-[var(--brand-lime)] px-3 py-1.5 text-xs font-bold uppercase tracking-[0.08em] text-[var(--brand-black)] shadow-sm">
               {program.badgeEn}
             </span>
           ) : null}
@@ -45,7 +45,7 @@ function ProgramCard({ program }: { program: Program }) {
 
 function ComingSoonTeaser() {
   return (
-    <article className="flex h-full flex-col justify-between rounded-3xl border border-dashed border-[var(--brand-black)]/12 bg-white p-6 sm:p-8">
+    <article className="brand-grid relative flex h-full min-h-72 flex-col justify-between overflow-hidden rounded-[2rem] border border-[var(--brand-black)]/10 bg-[var(--brand-mist)] p-6 sm:p-8">
       <div>
         <p className="font-display text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--brand-black)]/40">
           Coming soon
@@ -71,19 +71,19 @@ function ComingSoonTeaser() {
 
 export function ProgramsSection() {
   return (
-    <section id="programs" className="scroll-mt-20 bg-zinc-50 py-16 sm:py-24">
+    <section id="programs" className="scroll-mt-20 bg-[var(--brand-cream)] py-18 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <p className="font-display text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--brand-black)]/40 sm:text-xs sm:tracking-[0.2em]">
           {hubPrograms.eyebrowEn}
         </p>
-        <h2 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">
+        <h2 className="mt-2 text-3xl font-extrabold tracking-[-0.035em] sm:text-4xl">
           {hubPrograms.titleEn}
         </h2>
         <p className="mt-2 max-w-2xl text-base text-[var(--brand-black)]/65 sm:text-lg">
           {hubPrograms.subtitleEn}
         </p>
 
-        <div className="mt-10 space-y-6">
+        <div className="mt-12 grid gap-6 lg:grid-cols-[1.45fr_0.55fr] lg:items-stretch">
           {programs.map((program) => (
             <ProgramCard key={program.id} program={program} />
           ))}

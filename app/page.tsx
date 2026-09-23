@@ -18,7 +18,7 @@ export default function HomePage() {
       <HubPageReady />
       <AnnouncementBar variant="hub" />
       <SiteHeader variant="hub" />
-      <main>
+      <main id="main-content">
         <HubHero />
         <HubMilestoneSection />
         <HubApproachSection />
@@ -33,4 +33,3 @@ export default function HomePage() {
     </>
   );
 }
-

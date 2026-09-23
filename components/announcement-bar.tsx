@@ -11,10 +11,10 @@ export function AnnouncementBar({ variant = "hub" }: AnnouncementBarProps) {
   const text = variant === "hub" ? siteAnnouncement.textEn : siteAnnouncement.textMl;
   
   return (
-    <div className="relative z-50 bg-[var(--brand-lime)] text-[var(--brand-black)] border-b border-black/5">
+    <div className="relative z-50 border-b border-black/10 bg-[var(--brand-lime)] text-[var(--brand-black)]">
       <Link
         href="/#milestone"
-        className="group flex min-h-9 items-center justify-center px-4 py-2 text-center text-xs font-semibold tracking-wide sm:text-sm transition-all hover:bg-[var(--brand-black)] hover:text-white"
+        className="group flex min-h-9 items-center justify-center px-4 py-2 text-center text-xs font-bold tracking-[0.01em] transition-all duration-200 hover:bg-[var(--brand-black)] hover:text-white sm:text-sm"
       >
         <div className="flex items-center justify-center gap-2">
           {/* Pulsing indicator */}
